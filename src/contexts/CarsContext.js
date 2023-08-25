@@ -29,7 +29,7 @@ export const CarsProvider = ({ children }) => {
   const [cars, setCars] = useState([]) // Mock data - const [cars, setCars] = useState(carData)
 
   useEffect(() => {
-    fetch(apiUrl)
+    fetch(`${apiUrl}/car`)
       .then(res => res.json())
       .then(data => {
         setCars(data)
