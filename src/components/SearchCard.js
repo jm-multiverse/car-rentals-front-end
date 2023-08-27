@@ -43,8 +43,7 @@ export default function SearchCard() {
 
   return (
     <>
-      <Form className="w-75 m-auto">
-
+      <Form className="w-75 m-auto p-2">
         <Row className="mb-3">
           <Form.Group as={Col} controlId="pick-up-location">
             <FloatingLabel
