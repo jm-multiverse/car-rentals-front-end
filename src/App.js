@@ -7,6 +7,11 @@ import CarCard from "./components/CarCard";
 import LoadingSpinner from "./components/LoadingSpinner";
 import ViewCarModal from "./components/ViewCarModal";
 import SearchCard from "./components/SearchCard";
+import Nav from "./components/Nav"
+import Image from 'react-bootstrap/Image';
+
+import carBannerImage1 from './assets/car-photos-banners/360_F_294688686_eBbqaZUVeRr8BoCDuhxsWl4fjwV51FcV.jpg'
+
 
 function App() {
   const { cars } = useCars();
@@ -60,14 +65,14 @@ function App() {
     )
   }
 
-
   return (<>
-    <Container className="my-4">
-      <Stack direction='horizontal' gap='5' className='mb-5 justify-content-between align-items-end'>
-        <h1 className='my-0'>Car Rentals</h1>
-      </Stack>
+    <Nav />
+    <Container className="my-5">
+      <SearchCard />
+      <div className="d-flex justify-content-center">
+        <Image src={carBannerImage1} className="w-100 px-5" />
+      </div>
     </Container>
-    <SearchCard />
   </>);
 }
 

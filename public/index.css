@@ -21,4 +21,7 @@
   width: 120px;
 }
 
-.search-card label {}
+.search-card-form {
+  width: 90%;
+  margin: auto;
+}

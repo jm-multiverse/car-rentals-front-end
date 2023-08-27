@@ -43,7 +43,8 @@ export default function SearchCard() {
 
   return (
     <>
-      <Form className="w-75 m-auto p-2">
+      <Form className="search-card-form mb-5">
+        <h5 className='mb-4'>Rental Search</h5>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="pick-up-location">
             <FloatingLabel
