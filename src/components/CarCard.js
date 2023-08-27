@@ -7,15 +7,15 @@ export default function CarCard({
   carId,
   onViewCarClick,
 }) {
-  const { getCar, getRandomCarThumbnail } = useCars()
+  const { getCar, getCarThumbnail } = useCars()
   const { make, model, manufacturingYear, color, capacity, transmission, fuelType, carType, pricePerDay, imageUrl } = getCar(carId)
 
 
   return (
-    <Card className='p-4' onClick={onViewCarClick}>
+    <Card className='p-4 car-card' onClick={onViewCarClick}>
       <div className='d-flex'>
         <div className="car-thumbnail-container me-5">
-          <img src={getRandomCarThumbnail()} alt={`${make} ${model}`}
+          <img src={getCarThumbnail((carId % 10))} alt={`${make} ${model}`}
             className='w-100 h-100 object-fit-contain'
           />
         </div>

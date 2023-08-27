@@ -16,9 +16,8 @@ const CarsContext = React.createContext()
 
 const carThumbnails = [carImage1, carImage2, carImage3, carImage4, carImage5, carImage6, carImage7, carImage8, carImage9, carImage10,]
 
-export function getRandomCarThumbnail() {
-  const randomNumber = Math.floor(Math.random() * 10);
-  return carThumbnails[randomNumber]
+export function getCarThumbnail(number1to10) {
+  return carThumbnails[number1to10]
 }
 
 export function useCars() {
@@ -50,7 +49,7 @@ export const CarsProvider = ({ children }) => {
   return <CarsContext.Provider value={{
     cars,
     getCar,
-    getRandomCarThumbnail,
+    getCarThumbnail,
   }} >
     {children}
   </CarsContext.Provider>

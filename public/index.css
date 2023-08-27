@@ -4,9 +4,7 @@
 
 .car-card:hover {
   cursor: pointer;
-  transform: scale(1.01);
   border: 1px solid #000000;
-
 }
 
 .no-wrap {

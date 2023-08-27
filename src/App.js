@@ -28,13 +28,11 @@ function App() {
         }}
       >
         {cars.map(car => {
-          const randomImageNumber = Math.floor(Math.random() * 10) + 1;
           return (
             <CarCard
               key={car.id}
               carId={car.id}
               onViewCarClick={() => { handleViewCarClick(car.id) }}
-              randomImageNumber={randomImageNumber}
             />
           )
         })}
