@@ -4,7 +4,7 @@
 
 .car-card:hover {
   cursor: pointer;
-  border: 1px solid #000000;
+  border: 1px solid #333333;
 }
 
 .no-wrap {
@@ -19,5 +19,6 @@
 
 .reserve-button {
   width: 120px;
-
 }
+
+.search-card label {}
