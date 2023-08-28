@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import { useNavigate } from "react-router-dom";
 
 export default function SearchCard() {
   const today = new Date()
@@ -34,6 +35,12 @@ export default function SearchCard() {
 
   }
 
+  // let navigate = useNavigate();
+  // const routeChange = () => {
+  //   let path = `newPath`;
+  //   navigate(path);
+  // }
+
 
   const [pickUpDate, setPickUpDate] = useState(formatDateToYYYYMMDD(today));
   const [pickUpTime, setPickUpTime] = useState(getRoundedUpTime(today));
@@ -43,7 +50,7 @@ export default function SearchCard() {
 
   return (
     <>
-      <Form className="search-card-form mb-5">
+      <Form className="search-card-form my-5">
         <h5 className='mb-4'>Rental Search</h5>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="pick-up-location">

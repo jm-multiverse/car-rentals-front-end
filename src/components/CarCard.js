@@ -12,7 +12,7 @@ export default function CarCard({
 
 
   return (
-    <Card className='p-4 car-card' onClick={onViewCarClick}>
+    <Card className='p-4 car-card ' onClick={onViewCarClick}>
       <div className='d-flex'>
         <div className="car-thumbnail-container me-5">
           <img src={getCarThumbnail((carId % 10))} alt={`${make} ${model}`}
@@ -34,7 +34,7 @@ export default function CarCard({
             <div className='text-muted'>per day</div>
           </div>
           <div className='action-buttons-container d-flex gap-2 justify-content-end'>
-            <Button variant='outline-primary' className='mt-auto reserve-button'>Reserve</Button>
+            <Button variant='primary' className='mt-auto reserve-button'>Reserve</Button>
             <Button variant='outline-secondary' className='mt-auto'>Save</Button>
           </div>
         </div>

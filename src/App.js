@@ -10,7 +10,8 @@ import SearchCard from "./components/SearchCard";
 import Nav from "./components/Nav"
 import Image from 'react-bootstrap/Image';
 
-import carBannerImage1 from './assets/car-photos-banners/360_F_294688686_eBbqaZUVeRr8BoCDuhxsWl4fjwV51FcV.jpg'
+import banner1 from './assets/car-photos-banners/banner1.jpg'
+import bannerPromo1 from './assets/car-photos-banners/banner1-promo.jpg'
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   }
 
   function CarResultsList() {
-    return (
+    return (<>
       <div
         style={{
           display: 'grid',
@@ -43,6 +44,7 @@ function App() {
           )
         })}
       </div>
+    </>
     )
   }
 
@@ -69,9 +71,12 @@ function App() {
     <Nav />
     <Container className="my-5">
       <SearchCard />
-      <div className="d-flex justify-content-center">
-        <Image src={carBannerImage1} className="w-100 px-5" />
+      <div className="d-flex justify-content-center mt-auto mb-5 banner">
+        <Image src={banner1} className="w-100 " />
       </div>
+      <h5 className="mb-4">Browse Rentals</h5>
+      <SearchBar />
+      <CarResultsList />
     </Container>
   </>);
 }

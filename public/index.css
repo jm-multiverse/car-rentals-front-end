@@ -4,7 +4,7 @@
 
 .car-card:hover {
   cursor: pointer;
-  border: 1px solid #333333;
+  /* border: 1px solid #333333; */
 }
 
 .no-wrap {
@@ -24,4 +24,8 @@
 .search-card-form {
   width: 90%;
   margin: auto;
+}
+
+.banner {
+  padding: 20px 0px 70px 100px;
 }
