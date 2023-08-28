@@ -12,14 +12,14 @@ export default function CarCard({
 
 
   return (
-    <Card className='p-4 car-card' onClick={onViewCarClick}>
-      <div className='d-flex'>
-        <div className="car-thumbnail-container me-5">
+    <Card className='car-card' onClick={onViewCarClick}>
+      <div className='d-flex align-items-center justify-content-center'>
+        <div className="car-thumbnail-container">
           <img src={getCarThumbnail((carId % 10))} alt={`${make} ${model}`}
-            className='w-100 h-100 object-fit-contain'
+            className='w-100 h-100 object-fit-contain px-4'
           />
         </div>
-        <div className='flex-grow-1'>
+        <div className='flex-grow-1 d-flex flex-column p-4'>
           <div className='d-flex justify-content-between'>
             <h3 className='fw-normal'>{make} {model}</h3>
             <div>
@@ -27,15 +27,44 @@ export default function CarCard({
               <div className='text-muted'>per day</div>
             </div>
           </div>
-          <h5 className='fw-normal mb-1'>{carType}</h5>
-          <div className=''>Seats: {capacity}</div>
-          <div className=''>Color: {color}</div>
-          <div className=''>Year: {manufacturingYear}</div>
-          <div className=''>{transmission}</div>
-          <div className=''>{fuelType}</div>
-          <div className='action-buttons-container d-flex gap-2 justify-content-end'>
-            <Button variant='primary' className='mt-auto reserve-button'>Reserve</Button>
-            <Button variant='outline-secondary' className='mt-auto'>Save</Button>
+
+          <div className='d-flex justify-content-between'>
+            <div>
+              <div>
+                <span className='text-muted'>
+                  Type:&nbsp;
+                </span>
+                {carType}
+              </div>
+              <div>
+                <span className='text-muted'>
+                  Year:&nbsp;
+                </span>
+                {manufacturingYear}
+              </div>
+              <div>
+                <span className='text-muted'>
+                  Capacity:&nbsp;
+                </span>
+                {capacity}
+              </div>
+              <div>
+                <span className='text-muted'>
+                  Transmission:&nbsp;
+                </span>
+                {transmission}
+              </div>
+              <div>
+                <span className='text-muted'>
+                  Fuel:&nbsp;
+                </span>
+                {fuelType}
+              </div>
+            </div>
+            <div className='action-buttons-container d-flex gap-2 justify-content-end mt-auto'>
+              <Button variant='primary' className='mt-auto reserve-button'>Reserve</Button>
+              <Button variant='outline-secondary' className='mt-auto'>Save</Button>
+            </div>
           </div>
         </div>
 
@@ -43,3 +72,5 @@ export default function CarCard({
     </Card>
   )
 }
+
+// <div className='d-flex justify-content-between py-4'>
