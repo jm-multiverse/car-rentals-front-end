@@ -21,7 +21,7 @@ export default function CarCard({
         </div>
         <div className='flex-grow-1 d-flex flex-column p-4'>
           <div className='d-flex justify-content-between'>
-            <h3 className='fw-normal'>{make} {model}</h3>
+            <h4 className='fw-normal'>{make} {model}</h4>
             <div>
               <h5 className='fw-normal mb-0'>{currencyFormatter.format(pricePerDay)}</h5>
               <div className='text-muted'>per day</div>
