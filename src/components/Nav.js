@@ -4,18 +4,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faBell, faGlobe, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 
 function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Car Rentals</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <FontAwesomeIcon icon={faLocationArrow} className='pe-3' />
+          Car Rentals
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto gap-3">
             <Nav.Link href="#home">
-              <FontAwesomeIcon icon={faGlobe} className='px-2' />
+              <FontAwesomeIcon icon={faGlobe} className='pe-2' />
               English
             </Nav.Link>
             <Nav.Link href="#link">Trips</Nav.Link>
