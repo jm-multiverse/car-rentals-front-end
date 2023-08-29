@@ -65,8 +65,8 @@ export default function CarCard({
                 </div>
               </Col>
               <Col className='action-buttons-container d-flex gap-2 justify-content-end mt-auto pt-2'>
-                <Button variant='primary' className='mt-auto reserve-button'>Reserve</Button>
-                <Button variant='outline-secondary' className='mt-auto'>Save</Button>
+                <Button variant='secondary' className='mt-auto reserve-button'>Reserve</Button>
+                <Button variant='light' className='mt-auto'>Save</Button>
               </Col>
             </Row>
           </div>

@@ -133,7 +133,7 @@ export default function SearchCard() {
           </Form.Group>
         </Row>
 
-        <Button variant="primary" type="submit">
+        <Button className='search-btn' variant="success" type="submit">
           Search
         </Button>
       </Form>

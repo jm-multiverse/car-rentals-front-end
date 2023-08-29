@@ -34,14 +34,18 @@
   margin: auto;
 }
 
+.search-btn {
+  min-width: 100px;
+}
+
 .banner {
-  max-width: 1000px;
+  max-height: 500px;
   padding: 50px 0px 50px 0px;
   margin: auto;
 }
 
 .banner img {
-  border-radius: 1px;
+  border-radius: 10px;
   width: 100%;
   object-fit: cover;
 }

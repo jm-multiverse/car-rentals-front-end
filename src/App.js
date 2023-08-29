@@ -10,12 +10,7 @@ import SearchCard from "./components/SearchCard";
 import Nav from "./components/Nav"
 import Image from 'react-bootstrap/Image';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
-
-import bannerPromo1 from './assets/car-photos-banners/banner-2.jpg'
-
-
+import banner3 from './assets/car-photos-banners/banner-3.jpg'
 
 function App() {
   const { cars } = useCars();
@@ -72,11 +67,10 @@ function App() {
 
   return (<>
     <Nav />
-    <FontAwesomeIcon icon={faGlobe} />
     <Container className="my-5">
       <SearchCard />
       <div className="d-flex justify-content-center mb-5 banner">
-        <Image src={bannerPromo1} />
+        <Image src={banner3} />
       </div>
       <h5 className="mb-4">Browse Rentals</h5>
       <SearchBar />
