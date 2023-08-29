@@ -31,8 +31,8 @@ export default function CarCard({
               </div>
             </div>
 
-            <div className='d-flex justify-content-between'>
-              <div>
+            <Row className='d-flex justify-content-between'>
+              <Col>
                 <div>
                   <span className='text-muted'>
                     Type:&nbsp;
@@ -63,12 +63,12 @@ export default function CarCard({
                   </span>
                   {fuelType}
                 </div>
-              </div>
-              <div className='action-buttons-container d-flex gap-2 justify-content-end mt-auto'>
+              </Col>
+              <Col className='action-buttons-container d-flex gap-2 justify-content-end mt-auto pt-2'>
                 <Button variant='primary' className='mt-auto reserve-button'>Reserve</Button>
                 <Button variant='outline-secondary' className='mt-auto'>Save</Button>
-              </div>
-            </div>
+              </Col>
+            </Row>
           </div>
         </Col>
       </Row>
