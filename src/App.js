@@ -10,7 +10,7 @@ import SearchCard from "./components/SearchCard";
 import Nav from "./components/Nav"
 import Image from 'react-bootstrap/Image';
 
-import banner3 from './assets/car-photos-banners/banner-3.jpg'
+import banner3 from './assets/car-photos-banners/banner-promo-2.jpg'
 
 function App() {
   const { cars } = useCars();
