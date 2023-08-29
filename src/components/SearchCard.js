@@ -52,7 +52,7 @@ export default function SearchCard() {
       <Form className="search-card-form my-5">
         <h5 className='mb-4'>Rental Search</h5>
         <Row className="mb-3">
-          <Form.Group as={Col} controlId="pick-up-location">
+          <Form.Group as={Col} sm controlId="pick-up-location">
             <FloatingLabel
               controlId="pick-up-location"
               label="Pick Up Location"
