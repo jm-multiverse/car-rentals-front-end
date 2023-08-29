@@ -39,3 +39,8 @@
   padding: 50px 0px 50px 0px;
   margin: auto;
 }
+
+.banner img {
+  border-radius: 1px;
+  width: 100%;
+}

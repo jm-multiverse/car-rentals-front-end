@@ -72,7 +72,7 @@ function App() {
     <Container className="my-5">
       <SearchCard />
       <div className="d-flex justify-content-center mb-5 banner">
-        <Image src={bannerPromo1} className="w-100 " />
+        <Image src={bannerPromo1} />
       </div>
       <h5 className="mb-4">Browse Rentals</h5>
       <SearchBar />
