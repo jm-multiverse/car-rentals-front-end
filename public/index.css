@@ -43,4 +43,5 @@
 .banner img {
   border-radius: 1px;
   width: 100%;
+  object-fit: cover;
 }
