@@ -71,8 +71,8 @@ function App() {
     <Nav />
     <Container className="my-5">
       <SearchCard />
-      <div className="d-flex justify-content-center mt-auto mb-5 banner">
-        <Image src={banner1} className="w-100 " />
+      <div className="d-flex justify-content-center mb-5 banner">
+        <Image src={bannerPromo1} className="w-100 " />
       </div>
       <h5 className="mb-4">Browse Rentals</h5>
       <SearchBar />
