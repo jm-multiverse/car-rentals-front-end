@@ -4,7 +4,6 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import { useNavigate } from "react-router-dom";
 
 export default function SearchCard() {
   const today = new Date()
