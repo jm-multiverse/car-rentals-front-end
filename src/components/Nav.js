@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBell, faGlobe, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 
 function BasicExample() {
   return (
