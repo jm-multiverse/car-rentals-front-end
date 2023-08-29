@@ -2,6 +2,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import { currencyFormatter } from '../utils'
 import { useCars } from '../contexts/CarsContext'
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function CarCard({
   carId,
@@ -12,64 +13,66 @@ export default function CarCard({
 
 
   return (
-    <Card className='car-card' onClick={onViewCarClick}>
-      <div className='d-flex align-items-center justify-content-center'>
-        <div className="car-thumbnail-container">
-          <img src={getCarThumbnail((carId % 10))} alt={`${make} ${model}`}
-            className='w-100 h-100 object-fit-contain px-4'
+    <Card className='car-card' onClick={onViewCarClick} >
+      <Row className='d-flex'>
+        <Col md={4} className='d-flex' >
+          <img
+            className='car-thumbnail p-2'
+            src={getCarThumbnail((carId % 10))} alt={`${make} ${model}`}
           />
-        </div>
-        <div className='flex-grow-1 d-flex flex-column p-4'>
-          <div className='d-flex justify-content-between'>
-            <h4 className='fw-normal'>{make} {model}</h4>
-            <div>
-              <h5 className='fw-normal mb-0'>{currencyFormatter.format(pricePerDay)}</h5>
-              <div className='text-muted'>per day</div>
+        </Col>
+        <Col md={8}>
+          <div className='flex-grow-1 d-flex flex-column p-4'>
+            <div className='d-flex justify-content-between'>
+              <h4 className='fw-normal'>{make} {model}</h4>
+              <div>
+                <h5 className='fw-normal mb-0'>{currencyFormatter.format(pricePerDay)}</h5>
+                <div className='text-muted'>per day</div>
+              </div>
+            </div>
+
+            <div className='d-flex justify-content-between'>
+              <div>
+                <div>
+                  <span className='text-muted'>
+                    Type:&nbsp;
+                  </span>
+                  {carType}
+                </div>
+                <div>
+                  <span className='text-muted'>
+                    Year:&nbsp;
+                  </span>
+                  {manufacturingYear}
+                </div>
+                <div>
+                  <span className='text-muted'>
+                    Capacity:&nbsp;
+                  </span>
+                  {capacity}
+                </div>
+                <div>
+                  <span className='text-muted'>
+                    Transmission:&nbsp;
+                  </span>
+                  {transmission}
+                </div>
+                <div>
+                  <span className='text-muted'>
+                    Fuel:&nbsp;
+                  </span>
+                  {fuelType}
+                </div>
+              </div>
+              <div className='action-buttons-container d-flex gap-2 justify-content-end mt-auto'>
+                <Button variant='primary' className='mt-auto reserve-button'>Reserve</Button>
+                <Button variant='outline-secondary' className='mt-auto'>Save</Button>
+              </div>
             </div>
           </div>
-
-          <div className='d-flex justify-content-between'>
-            <div>
-              <div>
-                <span className='text-muted'>
-                  Type:&nbsp;
-                </span>
-                {carType}
-              </div>
-              <div>
-                <span className='text-muted'>
-                  Year:&nbsp;
-                </span>
-                {manufacturingYear}
-              </div>
-              <div>
-                <span className='text-muted'>
-                  Capacity:&nbsp;
-                </span>
-                {capacity}
-              </div>
-              <div>
-                <span className='text-muted'>
-                  Transmission:&nbsp;
-                </span>
-                {transmission}
-              </div>
-              <div>
-                <span className='text-muted'>
-                  Fuel:&nbsp;
-                </span>
-                {fuelType}
-              </div>
-            </div>
-            <div className='action-buttons-container d-flex gap-2 justify-content-end mt-auto'>
-              <Button variant='primary' className='mt-auto reserve-button'>Reserve</Button>
-              <Button variant='outline-secondary' className='mt-auto'>Save</Button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </Card>
+        </Col>
+      </Row>
+    </Card >
   )
 }
 
