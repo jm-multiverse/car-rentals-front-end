@@ -46,25 +46,6 @@ function App() {
     )
   }
 
-  function SearchPage() {
-    return (
-      <>
-        <Container className="my-4">
-          <Stack direction='horizontal' gap='5' className='mb-5 justify-content-between align-items-end'>
-            <h1 className='my-0'>Car Rentals</h1>
-            <SearchBar className='searchbar' />
-          </Stack>
-          {cars.length ? (<CarResultsList />) : (<LoadingSpinner />)}
-        </Container>
-        <ViewCarModal
-          show={showViewCarModal}
-          carId={viewCarModalCarId}
-          handleClose={() => { setShowViewCarModal(false) }}
-        />
-      </>
-    )
-  }
-
   return (<>
     <Nav />
     <Container className="my-5">
