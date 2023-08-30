@@ -8,8 +8,7 @@
 # testing
 /coverage
 
-# production
-/build
+# production uses /build for app
 
 # misc
 .DS_Store
