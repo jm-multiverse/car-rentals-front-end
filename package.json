@@ -2,6 +2,9 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "9.8.1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
