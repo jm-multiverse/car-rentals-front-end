@@ -16,7 +16,5 @@ RUN npm install react-scripts@5.0.1 -g
 # add app
 COPY . ./
 
-# RUN npm run build
-
 # start app
 CMD ["npm", "start"]
