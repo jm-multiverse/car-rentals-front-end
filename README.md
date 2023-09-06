@@ -14,7 +14,6 @@ You may use Railway as it has a robust free tier and works easily with GitHub Ac
 You may use AWS, Azure, or Google Cloud.
 
 
-
 ## React App
 
 ### `npm start dev`
@@ -27,3 +26,8 @@ You may also see any lint errors in the console.
 
 ### `npm run build` `npm start`
 To build a production version and run it in production mode.
+
+## Deployment: Heroku
+
+### Deployed URL
+https://car-rentals-front-end-a783ac6bc99b.herokuapp.com/
