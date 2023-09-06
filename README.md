@@ -15,10 +15,13 @@ You may use AWS, Azure, or Google Cloud.
 
 
 
-### `npm start`
+### `npm start dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run build` `npm start`
+To build a production version and run it in production mode.
