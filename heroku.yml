@@ -9,4 +9,4 @@ release:
 run:
   web:
     command:
-      - npm start
+      - npm run dev
