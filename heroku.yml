@@ -2,11 +2,11 @@ build:
   docker:
     web:
       dockerfile: /Dockerfile
-release:
-  image: web
-  command:
-    - npm run build
+# release:
+#   image: web
+#   command:
+#     - npm start
 run:
   web:
     command:
-      - npm run dev
+      - npm start
